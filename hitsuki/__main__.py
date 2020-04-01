@@ -164,7 +164,7 @@ def send_start(bot, update):
 
     keyboard = [[InlineKeyboardButton(text="🤖 Add To Group", url="https://t.me/MissSabrina_bot?startgroup=true")]]
     keyboard += [[InlineKeyboardButton(text="📋 Updates", url="https://t.me/SabrinaOfficial")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Control Panel", callback_data="cntrl_panel_M")]]
+                [[InlineKeyboardButton(text="🛠 Control Panel", callback_data="cntrl_panel_M")]]
     keyboard += [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_"),
                   InlineKeyboardButton(text="❓Help", callback_data="help_back")]]
 
