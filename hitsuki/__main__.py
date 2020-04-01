@@ -160,13 +160,13 @@ def send_start(bot, update):
     chat = update.effective_chat  # type: Optional[Chat] and unused variable
     text = (tld(chat.id, "Hey there! My name is *Sabrina* I'm here to help you manage your groups! \n\nClick Help button to find out more about how to use me to my full potential. \n\nJoin Support Chat ( @SabrinaChat ) if you need any support or help \n\nJoin ( @SabrinaOfficial ) if you want to keep up with the news, updates and bot downtime! \n\n"))
 
-    text += (tld(chat.id, "Made by [@TechnoAyanOfficial](tg://user?id={617426792})\n\nIngin memasukkanku ke grup? [Klik Disini!](t.me/YasirAssistant_bot?startgroup=true)"))
+    text += (tld(chat.id, "Made by [@TechnoAyanOfficial](tg://user?id={617426792})\n\nWant to add me to your group? [Click Here!](t.me/MissSabrina_bot?startgroup=true)"))
 
-    keyboard = [[InlineKeyboardButton(text="📃 Channel Saya", url="https://t.me/YasirPediaChannel")]]
-    keyboard = [[InlineKeyboardButton(text="Source Code", url="https://github.com/yasirarism/Hitsuki")]]
+    keyboard = [[InlineKeyboardButton(text="🤖 Add To Group", url="https://t.me/MissSabrina_bot?startgroup=true")]]
+    keyboard += [[InlineKeyboardButton(text="📋 Updates", url="https://t.me/SabrinaOfficial")]]
     keyboard += [[InlineKeyboardButton(text="🛠 Control Panel", callback_data="cntrl_panel_M")]]
-    keyboard += [[InlineKeyboardButton(text="🇺🇸 Bahasa", callback_data="set_lang_"),
-                  InlineKeyboardButton(text="❔ Bantuan", callback_data="help_back")]]
+    keyboard += [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_"),
+                  InlineKeyboardButton(text="❓Help", callback_data="help_back")]]
 
     update.effective_message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard),
                                         parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
