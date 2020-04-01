@@ -162,12 +162,11 @@ def send_start(bot, update):
 
     text += (tld(chat.id, "Made by [@TechnoAyanOfficial](tg://user?id={617426792})\n\nWant to add me to your group? [Click Here!](t.me/MissSabrina_bot?startgroup=true)"))
 
-    keyboard = [[InlineKeyboardButton(text="🤖 Add To Group", url="https://t.me/MissSabrina_bot?startgroup=true")]]
-    keyboard += [[InlineKeyboardButton(text="📋 Updates", url="https://t.me/SabrinaOfficial")]]
-                  InlineKeyboardButton(text="🛠 Control Panel", callback_data="cntrl_panel_M")]]
-    keyboard += [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_"),
+    keyboard = [[InlineKeyboardButton(text="🤖 Add To Group", url="https://t.me/MissSabrina_bot?startgroup=true")]] 
+    keyboard += [[InlineKeyboardButton(text="📋 Updates", url="https://t.me/SabrinaOfficial")]] 
+    keyboard += [[InlineKeyboardButton(text="🛠 Control Panel", callback_data="cntrl_panel_M")]] 
+    keyboard += [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_"), 
                   InlineKeyboardButton(text="❓Help", callback_data="help_back")]]
-
     update.effective_message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard),
                                         parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
