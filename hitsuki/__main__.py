@@ -144,7 +144,7 @@ def start(bot: Bot, update: Update, args: List[str]):
     else:
         try:
             update.effective_message.reply_text(
-                (tld(chat.id, "Halo guys! Saya masih aktif :3 PM saya jika kamu punya pertanyaan tentang saya!")))
+                (tld(chat.id, "Yup, I'm Alive 😁")))
         except:
             print("Nut")
 
@@ -198,7 +198,7 @@ def control_panel(bot, update):
         back_match = re.match(r"help_back", query.data)
 
     else:
-        M_match = "Ｈｉｔｓｕｋｉ．ＧＩＦ is best bot"  # LMAO, don't uncomment
+        M_match = "Sabrina is best bot"  # LMAO, don't uncomment
 
     if M_match:
         text = "*Control panel* 🛠"
@@ -420,7 +420,7 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text((tld(chat.id, "Contact me in PM for help!")),
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="Click me for help!",
+                                                [[InlineKeyboardButton(text="⚙️ Click Here for help!",
                                                                        url="t.me/{}?start=help".format(
                                                                            bot.username))]]))
         return
