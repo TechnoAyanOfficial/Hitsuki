@@ -160,7 +160,7 @@ def send_start(bot, update):
     chat = update.effective_chat  # type: Optional[Chat] and unused variable
     text = (tld(chat.id, "Hey there! My name is *Sabrina* I'm here to help you manage your groups! \n\nClick Help button to find out more about how to use me to my full potential. \n\nJoin Support Chat ( @SabrinaChat ) if you need any support or help \n\nJoin ( @SabrinaOfficial ) if you want to keep up with the news, updates and bot downtime! \n\n"))
 
-    text += (tld(chat.id, "Bot ini di atur oleh [Yasir Aris M](tg://user?id={617426792})\n\nIngin memasukkanku ke grup? [Klik Disini!](t.me/YasirAssistant_bot?startgroup=true)"))
+    text += (tld(chat.id, "Made by [@TechnoAyanOfficial](tg://user?id={617426792})\n\nIngin memasukkanku ke grup? [Klik Disini!](t.me/YasirAssistant_bot?startgroup=true)"))
 
     keyboard = [[InlineKeyboardButton(text="📃 Channel Saya", url="https://t.me/YasirPediaChannel")]]
     keyboard = [[InlineKeyboardButton(text="Source Code", url="https://github.com/yasirarism/Hitsuki")]]
