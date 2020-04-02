@@ -23,8 +23,7 @@ from hitsuki.modules.translations.strings import tld, tld_help
 from hitsuki.modules.sql import languages_sql as langsql
 from hitsuki.modules.connection import connected
 
-SOURCE_STRING = """
-I'm a modular Telegram Python bot running on python3 with an sqlalchemy database, using the python-telegram-bot library, and am fully opensource - you can find what makes me alive [here](https://github.com/HitaloKun/Hitsuki)
+SOURCE_STRING = """ 🖕
 """
 
 IMPORTED = {}
